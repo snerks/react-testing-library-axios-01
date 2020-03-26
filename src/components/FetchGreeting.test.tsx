@@ -17,7 +17,7 @@ it("fetches and displays data", async () => {
 
     // We'll be explicit about what data Axios is to return when `get` is called.
     // axiosMock.get.mockResolvedValueOnce({ data: { greeting: "hello there" } });
-    mockAxios.get.mockResolvedValueOnce({ data: { greeting: expectedGreeting + "!!!" } });
+    mockAxios.get.mockResolvedValueOnce({ data: { greeting: expectedGreeting } });
 
     // Let's render our Fetch component, passing it the url prop and destructuring
     // the `getByTestId` function so we can find individual elements.
